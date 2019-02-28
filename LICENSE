@@ -1,3 +1,14 @@
+All files are covered under the GPLv3 license as reproduced below,
+WITH THE EXCEPTION OF:
+
+- src/GLTFLoader_lights_patch.js - a modified version of GLTFLoader.js
+  from threejs.org - and is covered under the original THREE.js MIT
+  License. See threejs.org for details.
+
+- files undes example/scene, which are covered unders a creative common
+  license (see example/scene/LICENSE).
+
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 

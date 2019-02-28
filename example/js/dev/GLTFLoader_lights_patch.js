@@ -1,0 +1,1 @@
+../../../src/GLTFLoader_lights_patch.js

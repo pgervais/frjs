@@ -1,0 +1,48 @@
+<!-- Development html file for frjs. It can be reloaded without
+  recompiling frjs after every modification. 
+  If you're developing a game, use frjs.min.js instead. See index.html
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Frjs Example Game</title>
+    <style>
+      body { margin: 0; overflow: hidden;}
+      canvas { width: 100%; height: 100% }
+
+      #info {
+      position: absolute;
+      top: 20px;
+      color: black;
+      width: 100%;
+      text-align: left;
+      z-index: 100;
+      display:block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- frjs depends on those files. See Gruntfile.js for the
+    up-to-date list -->
+    <script src="js/dev/three.js"></script>
+    <script src="js/dev/GLTFLoader_lights_patch.js"></script>
+    <script src="js/dev/CopyShader.js"></script>
+    <script src="js/dev/FXAAShader.js"></script>
+    <script src="js/dev/EffectComposer.js"></script>
+    <script src="js/dev/RenderPass.js"></script>
+    <script src="js/dev/ShaderPass.js"></script>
+    <script src="js/dev/OutlinePass.js"></script>
+    <script src="js/dev/stats.min.js"></script>
+
+    <!-- uncompiled frjs.js -->
+    <script src="js/frjs.js"></script>
+
+    <!-- internationalization -->
+    <script src="js/gettext.min.js"></script>
+    
+    <!-- game definition -->
+    <script src="js/room.js"></script>
+
+  </body>
+</html>

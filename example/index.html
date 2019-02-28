@@ -1,0 +1,35 @@
+<!-- Example html file for an frjs game.
+  If you're modifying frjs itself, you want index-dev.html instead.
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Frjs Example Game</title>
+    <style>
+      body { margin: 0; overflow: hidden;}
+      canvas { width: 100%; height: 100% }
+
+      #info {
+      position: absolute;
+      top: 20px;
+      color: black;
+      width: 100%;
+      text-align: left;
+      z-index: 100;
+      display:block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- compiled frjs -->
+    <script src="js/frjs.min.js"></script>
+
+    <!-- internationalization -->
+    <script src="js/gettext.min.js"></script>
+    
+    <!-- game definition -->
+    <script src="js/room.js"></script>
+  </body>
+</html>
+

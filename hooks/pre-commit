@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# Makes sure no source file have trailing white space.
+
+# Redirect output to stderr.
+exec 1>&2
+
+
+files_with_whitespace=$(find . -name node_modules -prune -o -name .git -prune -o -name build -prune -o -name '*.js' -type f -exec egrep -l " +$" {} \;)
+if [ -z "$files_with_whitespace" ] ; then
+    exit 0
+else
+   echo "\n#### Not committing because some files have trailing whitespace ####\n"
+   echo $files_with_whitespace
+   exit 1
+fi
