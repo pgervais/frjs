@@ -1,4 +1,4 @@
-/*! frjs 0.1.0 2019-02-28 */
+/*! frjs 0.1.0 2019-03-04 */
 // threejs.org/license
 (function(l,ia){"object"===typeof exports&&"undefined"!==typeof module?ia(exports):"function"===typeof define&&define.amd?define(["exports"],ia):ia(l.THREE={})})(this,function(l){function ia(){}function A(a,b){this.x=a||0;this.y=b||0}function P(){this.elements=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1];0<arguments.length&&console.error("THREE.Matrix4: the constructor no longer reads arguments. use .set() instead.")}function ja(a,b,c,d){this._x=a||0;this._y=b||0;this._z=c||0;this._w=void 0!==d?d:1}function p(a,
 b,c){this.x=a||0;this.y=b||0;this.z=c||0}function oa(){this.elements=[1,0,0,0,1,0,0,0,1];0<arguments.length&&console.error("THREE.Matrix3: the constructor no longer reads arguments. use .set() instead.")}function Q(a,b,c,d,e,f,g,h,k,m){Object.defineProperty(this,"id",{value:Gf++});this.uuid=S.generateUUID();this.name="";this.image=void 0!==a?a:Q.DEFAULT_IMAGE;this.mipmaps=[];this.mapping=void 0!==b?b:Q.DEFAULT_MAPPING;this.wrapS=void 0!==c?c:1001;this.wrapT=void 0!==d?d:1001;this.magFilter=void 0!==
@@ -7150,7 +7150,7 @@ const frjs = (function () {
     // view when an object is clicked.
     function setSwitchViewAction(viewName, objectName, newView, message) {
       setAction(
-        viewName, objectName, [], message,
+        viewName, objectName, [], message || " ",
         function() {
           switchToView(newView);
         });

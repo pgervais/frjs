@@ -914,7 +914,7 @@ const frjs = (function () {
     // view when an object is clicked.
     function setSwitchViewAction(viewName, objectName, newView, message) {
       setAction(
-        viewName, objectName, [], message,
+        viewName, objectName, [], message || " ",
         function() {
           switchToView(newView);
         });
